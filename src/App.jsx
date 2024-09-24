@@ -54,8 +54,8 @@ useEffect(()=>{
     setTimerRunning(false)
 
     if(buttonRef.current)
-    buttonRef.classList.replace("fade-out", "fade-in")
-    buttonRef.disabled = false
+    buttonRef.current.classList.replace("fade-out", "fade-in")
+    buttonRef.current.disabled = false
   }
 return  () => clearInterval(timer)
 
